@@ -1717,6 +1717,7 @@ input, select, textarea {
 		.button.large {
 			font-size: 1.5em;
 			letter-spacing: -0.025em;
+			margin: 1em;
 		}
 
 		input[type="button"].alt,
@@ -1890,6 +1891,68 @@ input, select, textarea {
 					ul.social li a:hover:before {
 						background-color: transparent;
 					}
+
+/* Linkage */
+
+ul.linkage {
+	cursor: default;
+	margin: 0;
+	list-style: none;
+	padding-left: 0;
+}
+
+	ul.linkage li {
+		position: relative;
+		display: inline-block;
+		margin: 0.25em;
+		top: 0;
+		padding-left: 0;
+	}
+
+		ul.linkage li a {
+			-moz-transition: top .2s ease-in-out;
+			-webkit-transition: top .2s ease-in-out;
+			-ms-transition: top .2s ease-in-out;
+			transition: top .2s ease-in-out;
+			display: block;
+			width: 148px;
+			height: 148px;
+			border-radius: 8px;
+			top: 0;
+			position: relative;
+		}
+
+			ul.linkage li a:before {
+				background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+				background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+				background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+				background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+				-moz-transition: background-color .2s ease-in-out;
+				-webkit-transition: background-color .2s ease-in-out;
+				-ms-transition: background-color .2s ease-in-out;
+				transition: background-color .2s ease-in-out;
+				background-color: #3BA8D3;
+				border-radius: 8px;
+				box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+				color: #ffffff !important;
+				display: block;
+				font-size: 74px;
+				height: 148px;
+				line-height: 148px;
+				text-align: center;
+				outline: 0;
+				overflow: hidden;
+				text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+				width: 148px;
+			}
+
+							ul.linkage li a:hover {
+								top: -5px;
+							}
+
+								ul.linkage li a:hover:before {
+									background-color: transparent;
+								}
 
 /* Actions */
 
@@ -2106,7 +2169,7 @@ input, select, textarea {
 
 	#home {
 		padding: 10em 0 10em 0;
-		text-align: justify;
+		text-align: center;
 	}
 
 		#home .image {
@@ -2127,11 +2190,21 @@ input, select, textarea {
 		#home p {
 			font-size: 1.5em;
 			line-height: 1.75em;
+			text-align: justify;
 		}
 
 			#home p a {
 				color: inherit;
 			}
+
+	#paper{
+		padding: 10em 0 10em 0;
+		text-align: center;
+	}
+
+	#paper p {
+		text-align: justify;
+	}
 
 	#contact footer {
 		font-size: 0.9em;
@@ -2325,6 +2398,24 @@ input, select, textarea {
 					}
 
 						ul.social li a:before {
+							background-color: transparent !important;
+						}
+
+		/* linkage */
+
+			ul.linkage {
+				padding: 1em 0.5em 0 0.5em;
+			}
+
+				ul.linkage li {
+					margin: 0.5em 0.5em 0.5em 0.5em;
+				}
+
+					ul.linkage li a {
+						top: 0 !important;
+					}
+
+						ul.linkage li a:before {
 							background-color: transparent !important;
 						}
 
