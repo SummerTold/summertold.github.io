@@ -181,6 +181,7 @@ input, select, textarea {
 	h3 {
 		font-size: 1.5em;
 		letter-spacing: -0.015em;
+		text-align: left;
 	}
 
 	em, i {
@@ -288,7 +289,7 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: stretch;
+		align-items: flex-start;
 	}
 
 		.row > * {
@@ -298,7 +299,7 @@ input, select, textarea {
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
 		}
-
+		
 		.row.aln-left {
 			justify-content: flex-start;
 		}
@@ -1913,7 +1914,7 @@ input, select, textarea {
 	.box {
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		text-align: center;
+		text-align: justify;
 		padding: 2em;
 	}
 
@@ -1975,13 +1976,13 @@ input, select, textarea {
 
 		.icon.featured {
 			color: #EA8A95;
-			display: block;
+			display: none;
 			margin: 0 0 1.5em 0;
 			cursor: default;
 		}
 
 			.icon.featured:before {
-				font-size: 6em;
+				font-size: 2em;
 			}
 			
 /* Wrappers */
@@ -2106,7 +2107,7 @@ input, select, textarea {
 
 	#home {
 		padding: 10em 0 10em 0;
-		text-align: justify;
+		text-align: center;
 	}
 
 		#home .image {
@@ -2125,6 +2126,7 @@ input, select, textarea {
 		}
 
 		#home p {
+			text-align: justify;
 			font-size: 1.5em;
 			line-height: 1.75em;
 		}
